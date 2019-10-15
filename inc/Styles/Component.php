@@ -304,10 +304,16 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				},
 			],
 			'wp-rig-front-page' => [
-				'file' => 'front-page.min.css',
+				'file'             => 'front-page.min.css',
 				'preload_callback' => function() {
 					global $template;
 					return 'front-page.php' === basename( $template );
+				},
+			],
+			'wp-rig-kult-page' => [
+				'file'             => 'templates/kult-page.min.css',
+				'preload_callback' => function() {
+					return is_page();
 				},
 			],
 		];

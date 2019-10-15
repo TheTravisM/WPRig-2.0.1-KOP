@@ -1,0 +1,12 @@
+/* Custom Styles for Kult Pages */
+
+header#masthead.site-header {
+	color: white !important;
+	background: black !important;
+}
+
+.kult-page_main {
+	& h1 {
+		color: lime;
+	}
+}
