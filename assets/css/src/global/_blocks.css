@@ -1,4 +1,4 @@
-@import "_custom-properties.css";
+@import "../_custom-properties.css";
 
 /*--------------------------------------------------------------
 ## Blocks
@@ -83,7 +83,7 @@
 }
 
 .wp-block-column:not(:last-child),
-.wp-block-column:nth-child(2n+1) {
+.wp-block-column:nth-child(2n + 1) {
 	margin-right: 0;
 }
 
@@ -146,7 +146,6 @@ ul.wp-block-latest-posts.is-grid.alignfull {
 	margin: 0;
 	width: inherit;
 }
-
 
 .blocks-gallery-item:last-child:nth-child(odd) {
 	grid-column: span 2;

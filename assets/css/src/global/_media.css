@@ -1,4 +1,4 @@
-@import "_custom-properties.css";
+@import "../_custom-properties.css";
 
 /*--------------------------------------------------------------
 # Media
@@ -52,7 +52,6 @@ object {
 	.wp-block-image.alignleft {
 		margin-left: calc((100% - var(--content-width)) / 2);
 	}
-
 }
 
 /*--------------------------------------------------------------

@@ -1,4 +1,4 @@
-@import "_custom-properties.css";
+@import "../_custom-properties.css";
 
 /*--------------------------------------------------------------
 # Elements
@@ -23,6 +23,7 @@ html {
 /* stylelint-disable */
 body {
 	background: #fff;
+
 	/* Fallback for when there is no custom background color defined. */
 }
 /* stylelint-enable */

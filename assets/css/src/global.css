@@ -21,12 +21,13 @@
 # Imports
 --------------------------------------------------------------*/
 @import "_custom-properties.css";
-@import "_reset.css";
-@import "_typography.css";
-@import "_elements.css";
-@import "_links.css";
+@import "./global/_reset.css";
+@import "./global/_typography.css";
+@import "./global/_elements.css";
+@import "./global/_links.css";
+@import "./global/_accessibility.css";
 
-/* -- kult additions -- */
+/* -- Kult Components -- */
 @import "c-footer-nav.css";
 @import "c-footer-social-media.css";
 @import "c-footer.css";
