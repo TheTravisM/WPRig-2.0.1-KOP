@@ -20,7 +20,8 @@
 /*--------------------------------------------------------------
 # Imports
 --------------------------------------------------------------*/
-@import "_custom-properties.css";
+
+@import "./global/_custom-properties.css";
 @import "./global/_reset.css";
 @import "./global/_typography.css";
 @import "./global/_elements.css";
@@ -90,27 +91,31 @@
 	.has-sidebar .site {
 		margin: 0 1em;
 		display: grid;
-		grid-template-columns: 3fr 1fr;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			"header header header header"
+			"main, main, main, sidebar"
+			"footer footer footer footer";
 		grid-gap: 2rem;
 		justify-content: center;
 	}
 
 	.site-header {
-		grid-column: span 2;
+		grid-area: header;
 	}
 
 	.site-main {
-		grid-column: 1;
+		grid-area: main;
 		min-width: 0;
 	}
 
 	.primary-sidebar {
-		grid-column: 2;
+		grid-area: sidebar;
 		min-width: 0;
 	}
 
 	.site-footer {
-		grid-column: span 2;
+		grid-area: footer;
 	}
 }
 
