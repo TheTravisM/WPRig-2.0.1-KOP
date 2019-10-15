@@ -7,7 +7,10 @@
 
 :root {
 	--global-font-color: #333;
-	--global-font-family: "Crimson Text", serif;
+	--global-font-family:
+		"Open Sans",
+		"Helvetica",
+		sans-serif;
 	--global-font-size: 20;
 	--global-font-line-height: 1.4;
 	--highlight-font-family:
@@ -18,7 +21,25 @@
 	--content-width: 45rem;
 	--dropdown-symbol-width: 0.7em;
 
-	/* Custom editor colors */
+	/* -- [ Kult Fonts ] -- */
+	--kult-global-font-family: "Open Sans", "Helvetica", sans-serif;
+	--kult-highlight-font-family: "Roboto Condensed", "Helvetica Neue", "Arial Narrow", sans-serif;
+
+	/* -- [ Kult Colors ] -- */
+	--color-kult-white: #fff;
+	--color-kult-super-dark: #000;
+	--color-kult-black: #16161d;
+	--color-kult-orange: #f89921;
+
+	/* -- [ Kult Links ] -- */
+	--color-kult-link: #f89921;
+	--color-kult-link-visited: #f89921;
+	--color-kult-link-active: #f08804;
+
+	/* -- [ Transitions ] -- */
+	--kult-transition: all 0.35s ease-in;
+
+	/* -- [ Custom editor colors ] -- */
 	--color-theme-primary: #e36d60;
 	--color-theme-secondary: #41848f;
 	--color-theme-red: #c0392b;
