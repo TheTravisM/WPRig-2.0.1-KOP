@@ -90,7 +90,7 @@
 @media (--sidebar-query) {
 
 	.has-sidebar .site {
-		margin: 0 1em;
+		/* margin: 0 1em; */
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-areas:
@@ -217,6 +217,7 @@ select {
 
 .site-header {
 	padding-bottom: 1em;
+	background-color: var(--kult-color-black);
 }
 
 .header-image {
@@ -412,12 +413,14 @@ select {
 	width: 100%;
 	padding: 0.5em 1em 0.5em 0;
 	text-decoration: none;
-	color: #000;
+	text-transform: uppercase;
+	color: var(--kult-color-white);
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	text-decoration: underline;
+	color: var(--kult-color-link-active);
+	/* text-decoration: underline; */
 }
 
 .main-navigation ul {
