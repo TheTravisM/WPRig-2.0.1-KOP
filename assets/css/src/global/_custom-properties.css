@@ -22,19 +22,21 @@
 	--dropdown-symbol-width: 0.7em;
 
 	/* -- [ Kult Fonts ] -- */
+	--kult-global-font-color: #16161d;
+	--kult-lobal-font-size: 20;
 	--kult-global-font-family: "Open Sans", "Helvetica", sans-serif;
 	--kult-highlight-font-family: "Roboto Condensed", "Helvetica Neue", "Arial Narrow", sans-serif;
 
 	/* -- [ Kult Colors ] -- */
-	--color-kult-white: #fff;
-	--color-kult-super-dark: #000;
-	--color-kult-black: #16161d;
-	--color-kult-orange: #f89921;
+	--kult-color-white: #fff;
+	--kult-color-super-dark: #000;
+	--kult-color-black: #16161d;
+	--kult-color-orange: #f89921;
 
 	/* -- [ Kult Links ] -- */
-	--color-kult-link: #f89921;
-	--color-kult-link-visited: #f89921;
-	--color-kult-link-active: #f08804;
+	--kult-color-link: #f89921;
+	--kult-color-link-visited: #f89921;
+	--kult-color-link-active: #f08804;
 
 	/* -- [ Transitions ] -- */
 	--kult-transition: all 0.35s ease-in;

@@ -23,7 +23,7 @@
 
 @import "./global/_custom-properties.css";
 @import "./global/_reset.css";
-@import "./global/_typography.css";
+@import "./global/_kult-typography.css";
 @import "./global/_elements.css";
 @import "./global/_links.css";
 @import "./global/_accessibility.css";
@@ -70,7 +70,8 @@
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+	z-index: 100000;
+	/* Above WP toolbar. */
 }
 
 /* Do not show the outline on the skip link target. */
@@ -93,9 +94,9 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-areas:
-			"header header header header"
-			"main, main, main, sidebar"
-			"footer footer footer footer";
+			'header header header header'
+			'main main main sidebar'
+			'footer footer footer footer';
 		grid-gap: 2rem;
 		justify-content: center;
 	}
@@ -126,6 +127,7 @@
 textarea {
 	width: 100%;
 }
+
 /* stylelint-enable */
 
 /* stylelint-disable */
@@ -143,6 +145,7 @@ input[type="submit"] {
 	padding: 0.6em 1em 0.4em;
 	cursor: pointer;
 }
+
 /* stylelint-enable */
 
 button:hover,
@@ -372,9 +375,9 @@ select {
 	 * If the dropdown toggle is active with JS, then
 	 * we'll take care of showing the submenu with JS.
 	 */
-	.nav--toggle-sub li:hover > ul,
-	.nav--toggle-sub li.menu-item--toggled-on > ul,
-	.nav--toggle-sub li:not(.menu-item--has-toggle):focus > ul {
+	.nav--toggle-sub li:hover>ul,
+	.nav--toggle-sub li.menu-item--toggled-on>ul,
+	.nav--toggle-sub li:not(.menu-item--has-toggle):focus>ul {
 		display: block;
 	}
 
@@ -386,7 +389,7 @@ select {
 	 * This selector needs to stay separated, otherwise submenus
 	 * will not be displayed with IE/Edge.
 	 */
-	.nav--toggle-sub li:not(.menu-item--has-toggle):focus-within > ul {
+	.nav--toggle-sub li:not(.menu-item--has-toggle):focus-within>ul {
 		display: block;
 	}
 }
@@ -451,6 +454,7 @@ select {
 		padding-left: 0;
 		margin-left: 0;
 	}
+
 	/* stylelint-enable */
 
 	.main-navigation ul ul li a {
