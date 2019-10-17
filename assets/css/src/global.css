@@ -29,12 +29,13 @@
 @import "./global/_accessibility.css";
 
 /* -- Kult Components -- */
-@import "c-footer-nav.css";
-@import "c-footer-social-media.css";
-@import "c-footer.css";
-@import "c-header-nav.css";
-@import "c-header-social-media.css";
-@import "c-header.css";
+@import "./components/c-footer.css";
+@import "./components/c-footer-nav.css";
+@import "./components/c-footer-social-media.css";
+
+@import "./components/c-header-nav.css";
+@import "./components/c-header-social-media.css";
+@import "./components/c-header.css";
 
 /*--------------------------------------------------------------
 # Accessibility
