@@ -12,7 +12,10 @@
 namespace WP_Rig\WP_Rig;
 
 wp_rig()->print_styles( 'wp-rig-c-header' );
-/* wp_rig()->print_script( 'wp-rig-c-header' ); */
+/**
+ * Old JS Code
+ *  wp_rig()->print_script( 'wp-rig-c-header' );
+ * */
 
 ?>
 <!doctype html>
@@ -21,7 +24,6 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	
 	<!-- [ KULT Prefetch ] -->
 	<?php get_template_part( 'template-parts/head/kult-prefetch' ); ?>
 
@@ -35,6 +37,24 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	<?php get_template_part( 'template-parts/head/kult-favicons' ); ?>
 
 	<!-- JS -->
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+		<script>
+		$( window ).scroll( function () {
+			if ($( this ).scrollTop() > 30 ) {
+				$( '.c-header' ).addClass( 'c-header--scroll' );
+				$('.c-header_logo-img').addClass('c-header_logo-img--scroll' );
+			} else {
+				$( '.c-header' ).removeClass( 'c-header--scroll' );
+				$( '.c-header_logo-img' ).removeClass( 'c-header_logo-img--scroll' );
+			}
+		});
+		document.addEventListener('DOMContentLoaded', function() {
+			console.log( 'header JS Loaded' );
+		} );
+	</script>
 
 	<?php
 	if ( ! wp_rig()->is_amp() ) {

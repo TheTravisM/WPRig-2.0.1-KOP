@@ -105,7 +105,7 @@
 	height: 42px;
 }
 
-.c-header_logo-img>* {
+.c-header_logo-img > * {
 	-webkit-transition: fill 0.25s ease;
 	transition: fill 0.25s ease;
 }

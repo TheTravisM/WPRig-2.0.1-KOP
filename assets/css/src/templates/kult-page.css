@@ -1,12 +1,14 @@
 /* Custom Styles for Kult Pages */
 
+/* This is just test code  below */
+
 header#masthead.site-header {
-	color: white !important;
-	background: black !important;
+	color: var(--kult-color-white);
+	background: var(--kult-color-black);
 }
 
 .kult-page_main {
 	& h1 {
-		color: lime;
+		color: var(--kult-color-orange);
 	}
 }

@@ -55,14 +55,14 @@ blockquote {
 	margin: 0;
 }
 
-.entry-content>blockquote {
+.entry-content > blockquote {
 	padding-left: 1em;
 	margin-left: 1.5rem;
 }
 
 @media (--content-query) {
 
-	.entry-content>blockquote {
+	.entry-content > blockquote {
 		margin-left: auto;
 	}
 }
