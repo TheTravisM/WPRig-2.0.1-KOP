@@ -52,6 +52,7 @@
 	filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1));
 }
 
+	/* stylelint-disable */
 .c-header-social-media_img path {
 	fill: var(--kult-color-white);
 	transition: var(--kult-transition, all 0.35s ease-in);
@@ -63,6 +64,7 @@
 	fill: var(--kult-color-orange) !important;
 	transition: var(--kult-transition, all 0.35s ease-in);
 }
+/* stylelint-enable */
 
 .c-header-social-media_link--last {
 	margin-right: -10px;
