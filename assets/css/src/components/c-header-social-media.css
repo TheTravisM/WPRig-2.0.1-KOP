@@ -52,7 +52,7 @@
 	filter: drop-shadow(0 0 20px rgba(0, 0, 0, 1));
 }
 
-	/* stylelint-disable */
+/* stylelint-disable */
 .c-header-social-media_img path {
 	fill: var(--kult-color-white);
 	transition: var(--kult-transition, all 0.35s ease-in);
