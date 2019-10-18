@@ -62,6 +62,16 @@
 		justify-content: center;
 	}
 
+	.has-sidebar .kult-site {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas:
+			'header header header header header header'
+			'. main main main sidebar .'
+			'footer footer footer footer footer footer';
+	}
+
 	.site-header {
 		grid-area: header;
 	}
