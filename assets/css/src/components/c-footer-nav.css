@@ -22,7 +22,7 @@
 
 .c-footer-nav_link,
 .c-footer-nav_link:visited {
-	color: var(--color-kult-white);
+	color: var(--kult-color-white);
 	font-family: var(--kult-highlight-font-family);
 	font-weight: 600;
 	font-size: 21px;
@@ -38,7 +38,7 @@
 .c-footer-nav_link:hover,
 .c-footer-nav_link:focus,
 .c-footer-nav_link:active {
-	color: var(--color-kult-orange);
+	color: var(--kult-color-orange);
 	background-color: rgba(0, 0, 0, 0.1);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 	filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));

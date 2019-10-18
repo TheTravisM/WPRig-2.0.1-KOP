@@ -11,7 +11,7 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header();
+get_template_part( 'template-parts/header/c-header' );
 
 wp_rig()->print_styles( 'wp-rig-kult-front-page', 'wp-rig-content' );
 

@@ -19,14 +19,14 @@
 }
 
 .c-footer-social-media_img path {
-	fill: var(--color-kult-white);
+	fill: var(--kult-color-white);
 	transition: var(--kult-transition, all 0.35s ease-in);
 }
 
 .c-footer-social-media_link:hover .c-footer-social-media_img path,
 .c-footer-social-media_link:focus .c-footer-social-media_img path,
 .c-footer-social-media_link:active .c-footer-social-media_img path {
-	fill: var(--color-kult-orange) !important;
+	fill: var(--kult-color-orange) !important;
 	transition: var(--kult-transition, all 0.35s ease-in);
 }
 
