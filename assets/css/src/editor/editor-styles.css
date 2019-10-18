@@ -24,7 +24,7 @@
 @import ".././global/_elements.css";
 @import ".././global/_links.css";
 @import ".././global/_media.css";
-@import ".././global/_blocks.css";
+@import "../_blocks.css";
 
 /*--------------------------------------------------------------
 # Adjustments for the editor

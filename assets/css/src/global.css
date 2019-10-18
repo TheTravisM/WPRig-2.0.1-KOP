@@ -27,6 +27,9 @@
 @import "./global/_elements.css";
 @import "./global/_links.css";
 @import "./global/_accessibility.css";
+@import "./global/_header.css";
+@import "./global/_footer.css";
+@import "./global/_infinite-scroll.css";
 
 /* -- Kult Components -- */
 @import "./components/c-footer.css";
@@ -36,49 +39,6 @@
 @import "./components/c-header-nav.css";
 @import "./components/c-header-social-media.css";
 @import "./components/c-header.css";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-
-/**
- * Text meant only for screen readers.
- * Re: word-wrap: Many screen reader and browser combinations announce broken
- * words as they would appear visually.
- */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	word-wrap: normal !important;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 0.875rem;
-	font-weight: 700;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
-}
-
-/* Do not show the outline on the skip link target. */
-#primary[tabindex="-1"]:focus {
-	outline: 0;
-}
 
 /*--------------------------------------------------------------
 # Layouts
@@ -119,151 +79,6 @@
 	.site-footer {
 		grid-area: footer;
 	}
-}
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/* stylelint-disable */
-textarea {
-	width: 100%;
-}
-
-/* stylelint-enable */
-
-/* stylelint-disable */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
-	cursor: pointer;
-}
-
-/* stylelint-enable */
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-}
-
-button:active,
-button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-	color: #111;
-}
-
-select {
-	border: 1px solid #ccc;
-}
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-
-.site-header {
-	padding-bottom: 1em;
-	background-color: var(--kult-color-black);
-}
-
-.header-image {
-	margin: 0 auto;
-}
-
-.header-image img {
-	display: block;
-	margin: 0 auto;
-}
-
-.custom-logo-link {
-	display: inline-block;
-	margin: 0 auto 1em;
-}
-
-.site-branding {
-	text-align: center;
-	padding: 60px 0 1.75em;
-}
-
-.site-title {
-	margin: 0 1em;
-	font-family: var(--highlight-font-family);
-	font-stretch: condensed;
-	font-size: 38px;
-	font-weight: 700;
-	line-height: 1.2;
-	color: #333332;
-}
-
-.site-title a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.site-description {
-	margin: 0.4375em 0 0;
-	font-family: var(--highlight-font-family);
-	font-stretch: condensed;
-	font-size: 17px;
-	font-weight: inherit;
-	line-height: 1.4;
-	word-wrap: break-word;
-	color: #757575;
 }
 
 /*--------------------------------------------------------------
@@ -583,37 +398,4 @@ select {
 
 .pagination .current {
 	border-color: var(--global-font-color);
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.site-footer {
-	margin: 1em 0 0;
-	padding: 2em 0;
-	font-family: var(--highlight-font-family);
-	font-stretch: condensed;
-}
-
-.site-info {
-	text-align: center;
-}
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll .pagination,
-.infinite-scroll.neverending .site-footer {
-
-	/* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that
-were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
 }
