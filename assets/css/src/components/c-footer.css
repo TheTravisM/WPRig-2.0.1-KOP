@@ -1,6 +1,7 @@
 /* -- [ COMPONENT : FOOTER ] --------------------------*/
 
 .c-footer {
+	grid-area: footer;
 	display: flex;
 	background-color: #16161d;
 	background-color: var(--kult-color-black, #16161d);
@@ -70,7 +71,8 @@
 	max-width: 100%;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) { */
+	@media (min-width: 768px) {
 
 	.c-footer_container {
 		flex-direction: row;

@@ -114,7 +114,8 @@
 	display: none;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) { */
+@media (min-width: 768px) {
 
 	.c-header {
 		height: 120px;

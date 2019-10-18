@@ -13,11 +13,15 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .c-footer-nav_li {
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
 
 .c-footer-nav_link,
@@ -44,7 +48,8 @@
 	filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) { */
+	@media (min-width: 768px) {
 
 	.c-footer-nav {
 		flex: 1;

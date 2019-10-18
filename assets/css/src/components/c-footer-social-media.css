@@ -8,6 +8,7 @@
 	min-width: 100%;
 	-ms-flex-item-align: stretch;
 	align-self: stretch;
+	padding: 0;
 	margin: 0 auto;
 	list-style: none;
 	-ms-flex-pack: distribute;
@@ -17,6 +18,8 @@
 
 .c-footer-social-media_li {
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
 .c-footer-social-media_img path {
