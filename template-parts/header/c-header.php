@@ -75,7 +75,7 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	</a>
 
 	<!-- [ Header ] -->
-	<header class="c-header">
+	<header div="kult-header" class="c-header">
 		<!-- [ Header Container ] -->
 		<section class="c-header_container">
 			<!-- [ Header LOGO ] -->

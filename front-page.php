@@ -42,8 +42,3 @@ wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-kult-front-page' );
 <?php
 get_sidebar();
 get_template_part( 'template-parts/footer/c-footer' );
-/**
- * Removed footer
- * get_footer();
- */
-

@@ -46,6 +46,7 @@
 	background-color: rgba(0, 0, 0, 0.1);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 	filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+	text-decoration: none;
 }
 
 /* @media (min-width: 576px) { */
