@@ -12,10 +12,6 @@
 namespace WP_Rig\WP_Rig;
 
 wp_rig()->print_styles( 'wp-rig-c-header' );
-/**
- * Old JS Code
- *  wp_rig()->print_script( 'wp-rig-c-header' );
- * */
 
 ?>
 <!doctype html>
@@ -37,10 +33,7 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	<?php get_template_part( 'template-parts/head/kult-favicons' ); ?>
 
 	<!-- JS -->
-	<script
-		src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
 		$( window ).scroll( function () {
 			if ($( this ).scrollTop() > 30 ) {

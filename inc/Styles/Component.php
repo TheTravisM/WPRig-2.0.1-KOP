@@ -316,6 +316,14 @@ class Component implements Component_Interface, Templating_Component_Interface {
 					return is_page();
 				},
 			],
+			'wp-rig-c-header' => [
+				'file'             => 'components/c-header.min.css',
+				'preload_callback' => '__return_true',
+			],
+			'wp-rig-c-footer' => [
+				'file'             => 'components/c-footer.min.css',
+				'preload_callback' => '__return_true',
+			],
 		];
 
 		/**

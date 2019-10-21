@@ -17,4 +17,8 @@ namespace WP_Rig\WP_Rig;
 <!-- CDN Cloud Flair -->
 <link rel="dns-prefetch preconnect" href="//cdnjs.cloudflare.com" crossorigin>
 <!-- Google CDN -->
-<link rel="dns-prefetch preconnect"" href="//ajax.googleapis.com" crossorigin>
+<link rel="dns-prefetch preconnect" href="//ajax.googleapis.com" crossorigin>
+<!-- AWS Cloud Front -->
+<link rel="dns-prefetch preconnect" href="//d8g345wuhgd7e.cloudfront.net" crossorigin>
+<!-- WordPress -->
+<link rel="dns-prefetch preconnect" href="//s0.wp.com" crossorigin>

@@ -1,5 +1,9 @@
 /* -- [ COMPONENT : FOOTER ] --------------------------*/
 
+@import "./c-footer-nav.css";
+@import "./c-footer-social-media.css";
+
+
 .c-footer {
 	grid-area: footer;
 	display: flex;

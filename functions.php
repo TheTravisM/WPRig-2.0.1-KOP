@@ -64,3 +64,7 @@ require get_template_directory() . '/inc/functions.php';
 
 // Initialize the theme.
 call_user_func( 'WP_Rig\WP_Rig\wp_rig' );
+
+// Remove Jetpack CSS
+add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
+add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );

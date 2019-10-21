@@ -23,7 +23,7 @@ wp_rig()->print_styles( 'wp-rig-c-header-nav' );
 			<a class="c-header-nav_link" href="#">Trending</a>
 		</li>
 		<li class="c-header-nav_li">
-			<a class="c-header-nav_link" href="#">Podcast</a>
+			<a class="c-header-nav_link" href="./category/podcast/">Podcast</a>
 		</li>
 		<li class="c-header-nav_li c-header-nav_li--contact">
 			<a class="c-header-nav_link" href="#">Contact</a>

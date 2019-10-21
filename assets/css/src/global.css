@@ -32,12 +32,6 @@
 @import "./global/_infinite-scroll.css";
 
 /* -- Kult Components -- */
-@import "./components/c-footer.css";
-@import "./components/c-footer-nav.css";
-@import "./components/c-footer-social-media.css";
-
-@import "./components/c-header-nav.css";
-@import "./components/c-header-social-media.css";
 @import "./components/c-header.css";
 
 /*--------------------------------------------------------------

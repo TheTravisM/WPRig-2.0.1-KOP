@@ -1,5 +1,8 @@
 /* -- [ COMPONENT : HEADER ] --------------------------*/
 
+@import "./c-header-nav.css";
+@import "./c-header-social-media.css";
+
 .c-header {
 	grid-area: header;
 	background: #16161d;
