@@ -48,7 +48,9 @@ if ( is_singular( get_post_type() ) ) {
 			the_post_thumbnail(
 				'post-thumbnail',
 				[
-					'alt' => the_title_attribute(
+					'loading'    => 'lazy',
+					'importance' => 'low',
+					'alt'        => the_title_attribute(
 						[
 							'echo' => false,
 						]
