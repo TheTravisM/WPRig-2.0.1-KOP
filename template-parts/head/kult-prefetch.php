@@ -11,14 +11,28 @@ namespace WP_Rig\WP_Rig;
 
 <!-- [ KULT Prefetch ] -->
 
-<!-- Google Font -->
-<link rel="dns-prefetch preconnect" href="//fonts.googleapis.com"  crossorigin>
-<link rel="dns-prefetch preconnect" href="//fonts.gstatic.com" crossorigin>
 <!-- CDN Cloud Flair -->
-<link rel="dns-prefetch preconnect" href="//cdnjs.cloudflare.com" crossorigin>
+<link href="//cdnjs.cloudflare.com" rel="dns-prefetch" >
+<link href="//cdnjs.cloudflare.com" rel="preconnect" crossorigin>
 <!-- Google CDN -->
-<link rel="dns-prefetch preconnect" href="//ajax.googleapis.com" crossorigin>
+<link href="//ajax.googleapis.com" rel="dns-prefetch" >
+<link href="//ajax.googleapis.com" rel="preconnect" crossorigin>
 <!-- AWS Cloud Front -->
-<link rel="dns-prefetch preconnect" href="//d8g345wuhgd7e.cloudfront.net" crossorigin>
+<link href="//d8g345wuhgd7e.cloudfront.net" rel="dns-prefetch">
+<link href="//d8g345wuhgd7e.cloudfront.net" rel="preconnect" crossorigin>
 <!-- WordPress -->
-<link rel="dns-prefetch preconnect" href="//s0.wp.com" crossorigin>
+<link href="//s0.wp.com" rel="dns-prefetch">
+<link href="//s0.wp.com" rel="preconnect" crossorigin>
+<link href="//c0.wp.com" rel="dns-prefetch">
+<link href="//c0.wp.com" rel="preconnect" crossorigin>
+<link href="https://stats.wp.com" rel="dns-prefetch">
+<link href="https://stats.wp.com" rel="preconnect" crossorigin>
+<!-- Facebook -->
+<link href="//connect.facebook.net" rel="dns-prefetch" >
+<link href="//connect.facebook.net" rel="preconnect" crossorigin>
+<!-- Twitter -->
+<link href="//platform.twitter.com" rel="dns-prefetch" >
+<link href="//platform.twitter.com" rel="preconnect" crossorigin>
+<!-- PODbean -->
+<link href="https://pbcdn1.podbean.com" rel="dns-prefetch" >
+<link href="https://pbcdn1.podbean.com" rel="preconnect" crossorigin>

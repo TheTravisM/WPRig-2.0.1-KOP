@@ -35,8 +35,8 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	<!-- JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
-		$( window ).scroll( function () {
-			if ($( this ).scrollTop() > 30 ) {
+		window.addEventListener('scroll', function() {
+			if ($( this ).scrollTop() >= 30 ) {
 				$( '.c-header' ).addClass( 'c-header--scroll' );
 				$('.c-header_logo-img').addClass('c-header_logo-img--scroll' );
 			} else {
