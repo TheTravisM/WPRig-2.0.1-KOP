@@ -324,6 +324,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				'file'             => 'components/c-footer.min.css',
 				'preload_callback' => '__return_true',
 			],
+			'wp-rig-kult-front-page' => [
+				'file'             => 'templates/kult-front-page.min.css',
+				'preload_callback' => '__return_true',
+			],
 		];
 
 		/**
