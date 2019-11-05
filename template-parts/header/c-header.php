@@ -32,23 +32,6 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	<!-- [ KULT Favicons ] -->
 	<?php get_template_part( 'template-parts/head/kult-favicons' ); ?>
 
-	<!-- JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script>
-		window.addEventListener('scroll', function() {
-			if ($( this ).scrollTop() >= 30 ) {
-				$( '.c-header' ).addClass( 'c-header--scroll' );
-				$('.c-header_logo-img').addClass('c-header_logo-img--scroll' );
-			} else {
-				$( '.c-header' ).removeClass( 'c-header--scroll' );
-				$( '.c-header_logo-img' ).removeClass( 'c-header_logo-img--scroll' );
-			}
-		});
-		document.addEventListener('DOMContentLoaded', function() {
-			console.log( 'header JS Loaded' );
-		} );
-	</script>
-
 	<?php
 	if ( ! wp_rig()->is_amp() ) {
 		?>
@@ -68,7 +51,7 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 	</a>
 
 	<!-- [ Header ] -->
-	<header div="kult-header" class="c-header">
+	<header id="kult-header" class="c-header">
 		<!-- [ Header Container ] -->
 		<section class="c-header_container">
 			<!-- [ Header LOGO ] -->
@@ -83,3 +66,21 @@ wp_rig()->print_styles( 'wp-rig-c-header' );
 
 		</section>
 	</header>
+		<!-- Header Scroll JS  -->
+		<script>
+			window.addEventListener("scroll", function() {
+				var kultHeader = document.getElementById("kult-header");
+				var kultLogoLg = document.getElementById("kult-logo-lg");
+				var kultLogoSm = document.getElementById("kult-logo-sm");
+
+				if ( document.documentElement.scrollTop >= 30) {
+					kultHeader.classList.add("c-header--scroll");
+				kultLogoLg.classList.add("c-header_logo-img--scroll");
+					kultLogoSm.classList.add("c-header_logo-img--scroll");
+				} else {
+					kultHeader.classList.remove("c-header--scroll");
+					kultLogoLg.classList.remove("c-header_logo-img--scroll");
+					kultLogoSm.classList.remove("c-header_logo-img--scroll");
+				}
+			});
+		</script>
