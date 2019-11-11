@@ -12,13 +12,14 @@ namespace WP_Rig\WP_Rig;
 // Prevent showing nav menus.
 add_filter( 'has_nav_menu', '__return_false' );
 
-get_header();
+get_template_part( 'template-parts/header/c-header' );
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-mai kult-offline_main">
 		<?php get_template_part( 'template-parts/content/error', 'offline' ); ?>
 	</main><!-- #primary -->
 <?php
-get_footer();
+
+get_template_part( 'template-parts/footer/c-footer' );

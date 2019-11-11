@@ -14,7 +14,7 @@ get_template_part( 'template-parts/header/c-header' );
 wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-kult-single' );
 
 ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main kult-single_main">
 		<?php
 
 		while ( have_posts() ) {

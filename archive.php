@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying search results pages
+ * The template for displaying archive pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package wp_rig
  */
@@ -14,7 +14,7 @@ get_template_part( 'template-parts/header/c-header' );
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main kult-search_main">
+	<main id="primary" class="site-main kult-archive_main">
 		<?php
 		if ( have_posts() ) {
 

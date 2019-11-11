@@ -24,7 +24,7 @@ if ( post_password_required() ) {
 wp_rig()->print_styles( 'wp-rig-comments' );
 
 ?>
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area kult-comments">
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) {

@@ -41,4 +41,4 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	</main><!-- #primary -->
 <?php
 get_sidebar();
-get_footer();
+get_template_part( 'template-parts/footer/c-footer' );

@@ -12,12 +12,12 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header();
+get_template_part( 'template-parts/header/c-header' );
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main kult-singular_main">
 		<?php
 
 		while ( have_posts() ) {
@@ -29,4 +29,4 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	</main><!-- #primary -->
 <?php
 get_sidebar();
-get_footer();
+get_template_part( 'template-parts/footer/c-footer' );

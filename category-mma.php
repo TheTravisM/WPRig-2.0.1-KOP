@@ -12,17 +12,20 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header();
+get_template_part( 'template-parts/header/c-header' );
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main kult-mma_main">
+		<?php if ( have_posts() ) { ?>
+
+			<header class="page-header">
+				<h1 class="page-title">MMA:</h1>
+				<h2>Two Men Enter, One Man Leave</h2>
+			</header><!-- .page-header -->
+
 		<?php
-		if ( have_posts() ) {
-
-			get_template_part( 'template-parts/content/page_header' );
-
 			while ( have_posts() ) {
 				the_post();
 
@@ -37,4 +40,4 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	</main><!-- #primary -->
 <?php
 get_sidebar();
-get_footer();
+get_template_part( 'template-parts/footer/c-footer' );
