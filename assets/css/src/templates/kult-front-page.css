@@ -1,5 +1,7 @@
 /* Custom Styles for Kult Pages */
-
+.kult-front-page_main {
+	background-color: lightgray;
+}
 
 .kult-front-page_main article.sticky .entry-header {
 	display: flex;
@@ -31,7 +33,7 @@
 	color: #fff;
 	display: flex;
 	position: absolute;
-	bottom: 12px;
+	bottom: 0;
 	left: 0;
 	background: rgba(0, 0, 0, .6);
 	font-weight: bold;
