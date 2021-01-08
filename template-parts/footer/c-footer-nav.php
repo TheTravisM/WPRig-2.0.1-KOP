@@ -16,19 +16,19 @@ wp_rig()->print_styles( 'wp-rig-c-footer-nav' );
 <nav class="c-footer-nav">
 	<ul class="c-footer-nav_ul">
 		<li class="c-footer-nav_li">
-			<a class="c-footer-nav_link" href="#">terms of use</a>
+			<a class="c-footer-nav_link" href="<?php echo esc_url( home_url( '/' ) ); ?>terms-of-use">terms of use</a>
 		</li>
 		<li class="c-footer-nav_li">
-			<a class="c-footer-nav_link" href="#">privacy policy</a>
+			<a class="c-footer-nav_link" href="<?php echo esc_url( home_url( '/' ) ); ?>privacy-policy">privacy policy</a>
 		</li>
 		<li class="c-footer-nav_li">
-			<a class="c-footer-nav_link" href="#">cookie policy</a>
+			<a class="c-footer-nav_link" href="<?php echo esc_url( home_url( '/' ) ); ?>cookie-policy">cookie policy</a>
 		</li>
 		<li class="c-footer-nav_li">
-			<a class="c-footer-nav_link" href="#">contact</a>
+			<a class="c-footer-nav_link" href="<?php echo esc_url( home_url( '/' ) ); ?>contact-page">contact</a>
 		</li>
 		<li class="c-footer-nav_li">
-			<a class="c-footer-nav_link" href="#">Send Us A Top</a>
+			<a class="c-footer-nav_link" href="<?php echo esc_url( home_url( '/' ) ); ?>send-in-a-tip">Send Us A Tip</a>
 		</li>
 	</ul>
 </nav>
