@@ -3,6 +3,22 @@
 	background-color: lightgray;
 }
 
+/* -- feature post hover effect */
+a.post-thumbnail {
+	display: flex;
+	overflow: hidden;
+}
+
+a.post-thumbnail img {
+	transition: transform 2s ease;
+	transform: scale(1);
+}
+
+a.post-thumbnail:hover img {
+	transform: scale(1.1);
+}
+
+	/* -- Sticky -- */
 .kult-front-page_main article.sticky .entry-header {
 	display: flex;
 	flex-direction: column;

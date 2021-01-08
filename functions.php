@@ -9,7 +9,9 @@
  * @package wp_rig
  */
 
+
 define( 'WP_RIG_MINIMUM_WP_VERSION', '4.5' );
+
 define( 'WP_RIG_MINIMUM_PHP_VERSION', '7.0' );
 
 // Bail if requirements are not met.
@@ -68,3 +70,12 @@ call_user_func( 'WP_Rig\WP_Rig\wp_rig' );
 // Remove Jetpack CSS.
 add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
 add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
+
+// Remove Versioning of CSS and JS
+function remove_wp_ver_css_js( $src ) {
+	if ( strpos( $src, 'ver=' ) )
+		$src = remove_query_arg( 'ver', $src );
+	return $src;
+}
+add_filter( 'style_loader_src', 'remove_wp_ver_css_js', 9999 );
+add_filter( 'script_loader_src', 'remove_wp_ver_css_js', 9999 );
